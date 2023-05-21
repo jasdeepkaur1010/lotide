@@ -13,17 +13,14 @@ const eqArrays = function(a, b) {
     for (let i = 0; i < a.length; i++) {
     firstArray = a[i];
     secondArray = b[i];
-  
-  if (firstArray !== secondArray) {
+    if (firstArray !== secondArray) {
     return false;
-  } 
-  
-}
-return true;
-} else {
+    }
+    }
+  return true;
+  } else {
   return false;
-}
-
+  }
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
