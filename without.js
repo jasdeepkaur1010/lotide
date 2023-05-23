@@ -24,15 +24,16 @@ function assertArraysEqual(actual, expected) {
 };
 
 const without = function(source, itemsToRemove) {
-  const arrayFinal = [...source]; //spread operator 
-  for(let i = 0; i < itemsToRemove.length; i++) {
-    for(let j = 0; j < source.length; j++) {
-      if(itemsToRemove[i] === arrayFinal[j]) {
-        arrayFinal.splice(j, 1);
-      }
+  let array = [];
+  for(let i = 0; i < source.length; i++) {
+    for(let j = 0; j < itemsToRemove.length; j++) {
+      remove = itemsToRemove[j];
+    }
+    if(source[i] !== remove) {
+      array.push(source[i]);
     }
   }
-  console.log(arrayFinal);
+  console.log(array);
 };
 
 const test = [1, 2, 3];
@@ -41,7 +42,7 @@ assertArraysEqual(test, [1, 2, 3]);
 
 const test1 = ["1", "2", "3"];
 without(test1, [1, 2, "3"]);
-assertArraysEqual(test1, ["1", "2", "3"])
+assertArraysEqual(test1, ["1", "2", "3"]);
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
