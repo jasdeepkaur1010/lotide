@@ -24,16 +24,16 @@ function assertArraysEqual(actual, expected) {
 };
 
 const without = function(source, itemsToRemove) {
-  let array = [];
-  for(let i = 0; i < source.length; i++) {
-    for(let j = 0; j < itemsToRemove.length; j++) {
-      remove = itemsToRemove[j];
-    }
-    if(source[i] !== remove) {
-      array.push(source[i]);
+  const arrayFinal = [...source]; //spread operator 
+  for(let i = 0; i < itemsToRemove.length; i++) {
+    for(let j = 0; j < source.length; j++) {
+      if(itemsToRemove[i] === arrayFinal[j]) {
+        console.log(j);
+        arrayFinal.splice(j, 1);
+      }
     }
   }
-  console.log(array);
+  console.log(arrayFinal);
 };
 
 const test = [1, 2, 3];
