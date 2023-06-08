@@ -21,7 +21,7 @@ function assertArraysEqual(actual, expected) {
     } else {  
       console.log(`🛑🛑🛑Assertion failed: ${actual} !== ${expected}`);
     }
-}
+};
 
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
