@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jasdeepkaur1010/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide Project",
   "main": "assertEqual.js",
   "scripts": {
     "test": "mocha"
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/jasdeepkaur1010/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Jasdeep Brar",
+    "email": "jasdeepkaur1010@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jasdeepkaur1010/lotide/issues"

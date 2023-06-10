@@ -13,16 +13,7 @@ const findKey = function(object, callback) {
       truthyArray.push(element);
     }
   }
-  console.log(truthyArray[0]);
+  return truthyArray[0];
 };
 
-findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2);
-
-assertEqual(truthyArray[0], "noma");
+module.exports = findKey;

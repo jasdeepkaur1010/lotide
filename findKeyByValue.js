@@ -6,11 +6,6 @@ const assertEqual = function(actual, expected){
   }
 };
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
 const findKeyByValue = function (bestTVShowsByGenre, value) {
   for (let i in bestTVShowsByGenre) {
     if (bestTVShowsByGenre[i] == value) {
@@ -19,5 +14,4 @@ const findKeyByValue = function (bestTVShowsByGenre, value) {
   }
 }
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+module.exports = findKeyByValue;

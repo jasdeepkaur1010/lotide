@@ -39,8 +39,4 @@ const flatten = function (array) {
   console.log(flattenedArray);
 };
 
-let test1 = [1, 2, [3, 4], 5, [6]];
-flatten(test1);
-
-let test2 = [1, 2, [2, 3], 7];
-flatten(test2);
+module.exports = flatten;

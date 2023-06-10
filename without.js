@@ -28,23 +28,11 @@ const without = function(source, itemsToRemove) {
   for(let i = 0; i < itemsToRemove.length; i++) {
     for(let j = 0; j < source.length; j++) {
       if(itemsToRemove[i] === arrayFinal[j]) {
-        console.log(j);
         arrayFinal.splice(j, 1);
       }
     }
   }
-  console.log(arrayFinal);
+  return (arrayFinal);
 };
 
-const test = [1, 2, 3];
-without(test, [1]);
-assertArraysEqual(test, [1, 2, 3]);
-
-const test1 = ["1", "2", "3"];
-without(test1, [1, 2, "3"]);
-assertArraysEqual(test1, ["1", "2", "3"]);
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+module.exports = without;
