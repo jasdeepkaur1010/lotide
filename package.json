@@ -2,7 +2,7 @@
   "name": "@jasdeepkaur1010/lotide",
   "version": "1.0.0",
   "description": "Lotide Project",
-  "main": "assertEqual.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },

@@ -1,4 +1,4 @@
 const countLetters = require('../countLetters');
 
-(countLetters('LHL'));
-(countLetters('lighthouse in the house'));
+console.log(countLetters('LHL'));
+console.log(countLetters('lighthouse in the house'));
